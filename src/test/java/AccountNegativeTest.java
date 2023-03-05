@@ -1,3 +1,4 @@
+import jdk.jfr.Description;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +27,7 @@ public class AccountNegativeTest {
     }
 
     @Test
+    @Description("Проверки строки с негативным результатом")
     public void checkNegativeAccount() {
         Account account = new Account(name);
         Boolean result = account.checkNameToEmboss();
